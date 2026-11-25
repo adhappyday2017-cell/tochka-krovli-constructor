@@ -1,0 +1,1 @@
+function e(e,t,n=!1){let r=0;for(let t of e)/[0-9]/.test(t)?r+=.58:/[.,:;·'’ ]/.test(t)?r+=.3:t===`№`?r+=1:/[−–—-]/.test(t)?r+=.6:/[A-ZА-ЯЁ]/.test(t)?r+=.7:/[шщжмюфыШЩЖМЮФЫ]/.test(t)?r+=.75:r+=.56;return r*t*(n?1.05:1)}export{e as t};
